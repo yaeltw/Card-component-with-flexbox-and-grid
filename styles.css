@@ -1,0 +1,147 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204deg, 43%, 93%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contenedor {
+  border-radius: 0.5em;
+  box-shadow: 0.2em 0.2em 1em hsl(218deg, 22%, 67%);
+  width: auto;
+}
+
+.superior {
+  border-radius: 0.5em 0.5em 0 0;
+  padding: 1.5em 5em 1.5em 1.5em;
+  background-color: white;
+}
+.superior h2 {
+  color: hsl(179deg, 62%, 43%);
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+.superior h3 {
+  color: hsl(71deg, 73%, 54%);
+  margin-bottom: 0.5em;
+}
+.superior p {
+  color: hsl(218deg, 22%, 67%);
+}
+
+.inferior {
+  display: flex;
+}
+
+.izquierda {
+  padding: 3em;
+  background-color: hsl(179deg, 62%, 43%);
+  width: 100%;
+  border-radius: 0em 0em 0em 0.5em;
+}
+.izquierda h3 {
+  color: white;
+  padding-bottom: 0.5em;
+}
+.izquierda span {
+  font-size: 2em;
+  color: white;
+  padding-right: 0.2em;
+}
+.izquierda .per-month {
+  color: hsl(204deg, 43%, 93%);
+}
+.izquierda p {
+  color: white;
+  padding-bottom: 1em;
+}
+.izquierda button {
+  width: 100%;
+  padding: 0.8em 1em;
+  background-color: hsl(71deg, 73%, 54%);
+  border: none;
+  border-radius: 0.3em;
+  color: white;
+  box-shadow: 0.1em 0.1em 0.1em hsl(179deg, 62%, 43%);
+}
+.izquierda button:hover {
+  background-color: grey;
+  cursor: pointer;
+  transition: ease-in 200ms;
+}
+
+.derecha {
+  width: 120%;
+  background-color: hsl(179deg, 67%, 46%);
+  padding: 1em 5em 1em 0em;
+  display: grid;
+  align-content: center;
+  border-radius: 0em 0em 0.5em 0em;
+}
+.derecha h2 {
+  color: white;
+  padding: 1em 0em 1em 1.5em;
+}
+.derecha ul {
+  padding-bottom: 2em;
+}
+.derecha li {
+  list-style-type: none;
+}
+.derecha li a {
+  text-decoration: none;
+  color: hsl(220deg, 8%, 92%);
+}
+
+@media (max-width: 600px) {
+  .inferior {
+    flex-direction: column;
+    border-radius: 0;
+  }
+  .izquierda, .derecha {
+    border-radius: 0;
+  }
+  .derecha {
+    width: auto;
+  }
+}/*# sourceMappingURL=styles.css.map */
